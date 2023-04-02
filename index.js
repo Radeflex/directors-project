@@ -20,6 +20,7 @@ switchBtnFunc();
 let selectBtn = document.querySelectorAll("option");
 let years = document.querySelectorAll(".dir-year");
 let names = document.querySelectorAll(".dir-name");
+let submitBtn = document.getElementById("sel-submit")
 const defaultDirs = document.querySelectorAll("section.director");
 let syears = [];
 let snames = [];
@@ -134,6 +135,8 @@ let selFunc = () => {
 for (let btn of selectBtn) {
   btn.addEventListener("click", selFunc);
 }
+
+submitBtn.onclick = selFunc
 
 // поиск
 

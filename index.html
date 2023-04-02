@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto"
+    />
+    <title>Директора Гимназии</title>
+  </head>
+  <body>
+    <script src="./index.js" defer></script>
+    <header>
+      <nav class="nav-container" id="1">
+        <img class="nav-emb" src="img/emblema.png" />
+        <span class="nav-text">История директоров Гимназии</span>
+      </nav>
+      <section class="control-buttons">
+        <div class="search-cont">
+          <div id="search">
+            <div class="hide" id="search-cross">×</div>
+            <input type="text" id="search-field" placeholder="Поиск" />
+            <img src="img/lupa.png" id="search-btn" />
+          </div>
+          <span id="search-alert"></span>
+          <span id="search-res"></span>
+        </div>
+
+        <div id="sort-btn">
+          <span class="sb-text">сортировать:</span>
+          <div class="sb-selection">
+            <select id="sort-div">
+              <option id="opt0">по умолчанию</option>
+              <option id="opt1">сначала старые</option>
+              <option id="opt2">сначала новые</option>
+              <option id="opt3">по алфавиту</option>
+            </select>
+            <button id="sel-submit" onclick="selFunc()">✔</button>
+          </div>
+        </div>
+      </section>
+    </header>
+    <div class="line"></div>
+    <main>
+      <section class="director">
+        <div class="dir-field">
+          <span class="dir-year" id="dy-1">1913-1917</span>
+          <img class="dir-img" src="img/d1.jpg" />
+          <span class="dir-name" id="dn-1"
+            >Любомудров Евгений Александрович</span
+          >
+        </div>
+        <button class="btn-show" id="bt1">Показать информацию</button>
+        <div class="dir-info-block hide" id="dib1">
+          <span class="di-text">lorem ipsum...lorem ipsum...</span>
+        </div>
+      </section>
+      <section class="director">
+        <div class="dir-field">
+          <span class="dir-year" id="dy-2">-</span>
+          <img class="dir-img" src="img/d2.jpg" />
+          <span class="dir-name" id="dn-2">Лепилин Яков Павлович</span>
+        </div>
+        <button class="btn-show" id="bt2">Показать информацию</button>
+        <div class="dir-info-block hide" id="dib2">
+          <span class="di-text">lorem ipsum...lorem ipsum...</span>
+        </div>
+      </section>
+      <section class="director">
+        <div class="dir-field">
+          <span class="dir-year" id="dy-3">-</span>
+          <img class="dir-img" src="img/d3.jpg" />
+          <span class="dir-name" id="dn-3">Удовенко Михаил Павлович</span>
+        </div>
+        <button class="btn-show" id="bt3">Показать информацию</button>
+        <div class="dir-info-block hide" id="dib3">
+          <span class="di-text">lorem ipsum...lorem ipsum...</span>
+        </div>
+      </section>
+      <section class="director">
+        <div class="dir-field">
+          <span class="dir-year" id="dy-4">1938-1941</span>
+          <img class="dir-img" src="img/d4.jpg" />
+          <span class="dir-name" id="dn-4">Кляцкий Зелик Капелович</span>
+        </div>
+        <button class="btn-show" id="bt4">Показать информацию</button>
+        <div class="dir-info-block hide" id="dib4">
+          <span class="di-text">lorem ipsum...lorem ipsum...</span>
+        </div>
+      </section>
+      <section class="director">
+        <div class="dir-field">
+          <span class="dir-year" id="dy-5">1945-1947</span>
+          <span class="dir-name" id="dn-5">Кухтин Евгений Павлович</span>
+        </div>
+        <button class="btn-show" id="bt5">Показать информацию</button>
+        <div class="dir-info-block hide" id="dib5">
+          <span class="di-text">lorem ipsum...lorem ipsum...</span>
+        </div>
+      </section>
+      <section class="director">
+        <div class="dir-field">
+          <span class="dir-year" id="dy-6">1948-1962</span>
+          <img class="dir-img" src="img/d6.jpg" />
+          <span class="dir-name" id="dn-6">Белоус Алексей Иванович</span>
+        </div>
+        <button class="btn-show" id="bt6">Показать информацию</button>
+        <div class="dir-info-block hide" id="dib6">
+          <span class="di-text">lorem ipsum...lorem ipsum...</span>
+        </div>
+      </section>
+      <section class="director">
+        <div class="dir-field">
+          <span class="dir-year" id="dy-7">1962-1965</span>
+          <img class="dir-img" src="img/d7.jpg" />
+          <span class="dir-name" id="dn-7">Петренко Петр Федорович</span>
+        </div>
+        <button class="btn-show" id="bt7">Показать информацию</button>
+        <div class="dir-info-block hide" id="dib7">
+          <span class="di-text">lorem ipsum...lorem ipsum...</span>
+        </div>
+      </section>
+      <section class="director">
+        <div class="dir-field">
+          <span class="dir-year" id="dy-8">1965-1966</span>
+          <img class="dir-img" src="img/d8.jpg" />
+          <span class="dir-name" id="dn-8">Назаров Алексей Васильевич</span>
+        </div>
+        <button class="btn-show" id="bt8">Показать информацию</button>
+        <div class="dir-info-block hide" id="dib8">
+          <span class="di-text">lorem ipsum...lorem ipsum...</span>
+        </div>
+      </section>
+      <section class="director">
+        <div class="dir-field">
+          <span class="dir-year" id="dy-9">1966-1967</span>
+          <img class="dir-img" src="img/d9.jpg" />
+          <span class="dir-name" id="dn-9">Годецкая Елена Михайловна</span>
+        </div>
+        <button class="btn-show" id="bt9">Показать информацию</button>
+        <div class="dir-info-block hide" id="dib9">
+          <span class="di-text">lorem ipsum...lorem ipsum...</span>
+        </div>
+      </section>
+      <section class="director">
+        <div class="dir-field">
+          <span class="dir-year" id="dy-10">1976-1984</span>
+          <img class="dir-img" src="img/d10.jpg" />
+          <span class="dir-name" id="dn-10">Божинский Иван Николаевич</span>
+        </div>
+        <button class="btn-show" id="bt10">Показать информацию</button>
+        <div class="dir-info-block hide" id="dib10">
+          <span class="di-text">lorem ipsum...lorem ipsum...</span>
+        </div>
+      </section>
+      <section class="director">
+        <div class="dir-field">
+          <span class="dir-year" id="dy-11">1984-2003</span>
+          <img class="dir-img" src="img/d11.jpg" />
+          <span class="dir-name" id="dn-11">Ковалев Александр Алексеевич</span>
+        </div>
+        <button class="btn-show" id="bt11">Показать информацию</button>
+        <div class="dir-info-block hide" id="dib11">
+          <span class="di-text">lorem ipsum...lorem ipsum...</span>
+        </div>
+      </section>
+      <section class="director">
+        <div class="dir-field">
+          <span class="dir-year" id="dy-12">2003-2011</span>
+          <img class="dir-img" src="img/d12.jpg" />
+          <span class="dir-name" id="dn-12">Ковалева Ирина Викторовна</span>
+        </div>
+        <button class="btn-show" id="bt12">Показать информацию</button>
+        <div class="dir-info-block hide" id="dib12">
+          <span class="di-text">lorem ipsum...lorem ipsum...</span>
+        </div>
+      </section>
+      <section class="director">
+        <div class="dir-field">
+          <span class="dir-year" id="dy-13">2011-2014</span>
+          <img class="dir-img" src="img/d13.jpg" />
+          <span class="dir-name" id="dn-13">Ковалёв Александр Алексеевич</span>
+        </div>
+        <button class="btn-show" id="bt13">Показать информацию</button>
+        <div class="dir-info-block hide" id="dib13">
+          <span class="di-text">lorem ipsum...lorem ipsum...</span>
+        </div>
+      </section>
+      <section class="director">
+        <div class="dir-field">
+          <span class="dir-year" id="dy-14">2014-2022</span>
+          <img class="dir-img" src="img/d14.jpg" />
+          <span class="dir-name" id="dn-14"
+            >Ольховская Наталья Владимировна</span
+          >
+        </div>
+        <button class="btn-show" id="bt14">Показать информацию</button>
+        <div class="dir-info-block hide" id="dib14">
+          <span class="di-text">lorem ipsum...lorem ipsum...</span>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="f-content">
+        <h4>"Директора Гимназии"</h4>
+        <a class="upbtn" href="#1">Наверх ↑</a>
+        <h5>2023 г.</h5>
+      </div>
+    </footer>
+  </body>
+</html>

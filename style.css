@@ -1,4 +1,5 @@
 body {
+  font-family: "Roboto";
   margin: 0;
   padding: 0;
 }
@@ -24,7 +25,6 @@ section {
 
 .nav-text {
   font-size: 35px;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-weight: 500;
   cursor: default;
   color: #623a23;
@@ -61,7 +61,6 @@ section {
 }
 
 #search-field {
-  font-family: "Roboto";
   height: 25px;
   width: 200px;
   font-size: 12px;
@@ -75,13 +74,11 @@ section {
 #search-res {
   color: rgb(63, 63, 248);
   font-size: 10px;
-  font-family: "Roboto";
 }
 
 #search-alert {
   color: rgb(233, 35, 35);
   font-size: 10px;
-  font-family: "Roboto";
 }
 #search-cross {
   font-size: 35px;
@@ -110,6 +107,7 @@ section {
   color: white;
   text-align: center;
 }
+
 #sel-submit {
   display: none;
   background: 0;
@@ -160,7 +158,6 @@ main {
 
 .dir-name {
   font-size: 25px;
-  font-family: "Roboto";
   color: #402626;
   font-weight: 600;
 }
@@ -173,7 +170,6 @@ main {
 .dir-year {
   color: #884a4a;
   font-size: 30px;
-  font-family: "Roboto";
   font-weight: 600;
 }
 
@@ -213,7 +209,6 @@ main {
   margin-top: 25px;
   font-size: 17px;
   color: #3a3a3a;
-  font-family: "Roboto";
   font-weight: 500;
   margin-bottom: 25px;
 }
@@ -230,7 +225,6 @@ footer {
 .f-content {
   color: white;
   font-size: 15px;
-  font-family: "Roboto";
   width: 58%;
   display: flex;
   justify-content: space-between;
@@ -270,6 +264,11 @@ footer {
     margin: 0;
     flex-direction: column;
     justify-content: space-around;
+  }
+  .sb-selection {
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
   }
   #sel-submit {
     display: block;

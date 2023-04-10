@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto"
+    />
+    <title>Директора Гимназии</title>
+  </head>
+  <body>
+    <script src="./index.js" defer></script>
+    <header>
+      <nav class="nav-container" id="1">
+        <img class="nav-emb" src="img/emblema.png" />
+        <span class="nav-text">История директоров Гимназии</span>
+      </nav>
+      <section class="control-buttons">
+        <div class="search-cont">
+          <div id="search">
+            <div class="hide" id="search-cross">×</div>
+            <input type="text" id="search-field" placeholder="Поиск" />
+            <img src="img/lupa.png" id="search-btn" />
+          </div>
+          <span id="search-alert"></span>
+          <span id="search-res"></span>
+        </div>
+
+        <div id="sort-btn">
+          <span class="sb-text">сортировать:</span>
+          <div class="sb-selection">
+            <select id="sort-div">
+              <option id="opt0">по умолчанию</option>
+              <option id="opt1">сначала старые</option>
+              <option id="opt2">сначала новые</option>
+              <option id="opt3">по алфавиту</option>
+            </select>
+            <button id="sel-submit">✔</button>
+          </div>
+        </div>
+      </section>
+    </header>
+    <div class="line"></div>
+    <main>
+      <section class="director">
+        <div class="dir-field">
+          <span class="dir-year" id="dy-1">1913-1917</span>
+          <img class="dir-img" src="img/d1.jpg" />
+          <span class="dir-name" id="dn-1"
+            >Любомудров Евгений Александрович</span
+          >
+        </div>
+        <button class="btn-show" id="bt1">Показать информацию</button>
+        <div class="dir-info-block hide" id="dib1">
+          <span class="di-text">Информации пока нет.</span>
+        </div>
+      </section>
+      <section class="director">
+        <div class="dir-field">
+          <span class="dir-year" id="dy-2">-</span>
+          <img class="dir-img" src="img/d2.jpg" />
+          <span class="dir-name" id="dn-2">Лепилин Яков Павлович</span>
+        </div>
+        <button class="btn-show" id="bt2">Показать информацию</button>
+        <div class="dir-info-block hide" id="dib2">
+          <span class="di-text">Информации пока нет.</span>
+        </div>
+      </section>
+      <section class="director">
+        <div class="dir-field">
+          <span class="dir-year" id="dy-3">-</span>
+          <img class="dir-img" src="img/d3.jpg" />
+          <span class="dir-name" id="dn-3">Удовенко Михаил Павлович</span>
+        </div>
+        <button class="btn-show" id="bt3">Показать информацию</button>
+        <div class="dir-info-block hide" id="dib3">
+          <span class="di-text">Информации пока нет.</span>
+        </div>
+      </section>
+      <section class="director">
+        <div class="dir-field">
+          <span class="dir-year" id="dy-4">1938-1941</span>
+          <img class="dir-img" src="img/d4.jpg" />
+          <span class="dir-name" id="dn-4">Кляцкий Зелик Капелович</span>
+        </div>
+        <button class="btn-show" id="bt4">Показать информацию</button>
+        <div class="dir-info-block hide" id="dib4">
+          <span class="di-text">Информации пока нет.</span>
+        </div>
+      </section>
+      <section class="director">
+        <div class="dir-field">
+          <span class="dir-year" id="dy-5">1945-1947</span>
+          <span class="dir-name" id="dn-5">Кухтин Евгений Павлович</span>
+        </div>
+        <button class="btn-show" id="bt5">Показать информацию</button>
+        <div class="dir-info-block hide" id="dib5">
+          <span class="di-text">Информации пока нет.</span>
+        </div>
+      </section>
+      <section class="director">
+        <div class="dir-field">
+          <span class="dir-year" id="dy-6">1948-1962</span>
+          <img class="dir-img" src="img/d6.jpg" />
+          <span class="dir-name" id="dn-6">Белоус Алексей Иванович</span>
+        </div>
+        <button class="btn-show" id="bt6">Показать информацию</button>
+        <div class="dir-info-block hide" id="dib6">
+          <span class="di-text">Информации пока нет.</span>
+        </div>
+      </section>
+      <section class="director">
+        <div class="dir-field">
+          <span class="dir-year" id="dy-7">1962-1965</span>
+          <img class="dir-img" src="img/d7.jpg" />
+          <span class="dir-name" id="dn-7">Петренко Петр Федорович</span>
+        </div>
+        <button class="btn-show" id="bt7">Показать информацию</button>
+        <div class="dir-info-block hide" id="dib7">
+          <span class="di-text">Информации пока нет.</span>
+        </div>
+      </section>
+      <section class="director">
+        <div class="dir-field">
+          <span class="dir-year" id="dy-8">1965-1966</span>
+          <img class="dir-img" src="img/d8.jpg" />
+          <span class="dir-name" id="dn-8">Назаров Алексей Васильевич</span>
+        </div>
+        <button class="btn-show" id="bt8">Показать информацию</button>
+        <div class="dir-info-block hide" id="dib8">
+          <span class="di-text">Информации пока нет.</span>
+        </div>
+      </section>
+      <section class="director">
+        <div class="dir-field">
+          <span class="dir-year" id="dy-9">1966-1967</span>
+          <img class="dir-img" src="img/d9.jpg" />
+          <span class="dir-name" id="dn-9">Годецкая Елена Михайловна</span>
+        </div>
+        <button class="btn-show" id="bt9">Показать информацию</button>
+        <div class="dir-info-block hide" id="dib9">
+          <span class="di-text">Информации пока нет.</span>
+        </div>
+      </section>
+      <section class="director">
+        <div class="dir-field">
+          <span class="dir-year" id="dy-10">1976-1984</span>
+          <img class="dir-img" src="img/d10.jpg" />
+          <span class="dir-name" id="dn-10">Божинский Иван Николаевич</span>
+        </div>
+        <button class="btn-show" id="bt10">Показать информацию</button>
+        <div class="dir-info-block hide" id="dib10">
+          <span class="di-text">Информации пока нет.</span>
+        </div>
+      </section>
+      <section class="director">
+        <div class="dir-field">
+          <span class="dir-year" id="dy-11">1984-2003</span>
+          <img class="dir-img" src="img/d11.jpg" />
+          <span class="dir-name" id="dn-11">Ковалев Александр Алексеевич</span>
+        </div>
+        <button class="btn-show" id="bt11">Показать информацию</button>
+        <div class="dir-info-block hide" id="dib11">
+          <span class="di-text">Информации пока нет.</span>
+        </div>
+      </section>
+      <section class="director">
+        <div class="dir-field">
+          <span class="dir-year" id="dy-12">2003-2011</span>
+          <img class="dir-img" src="img/d12.jpg" />
+          <span class="dir-name" id="dn-12">Ковалева Ирина Викторовна</span>
+        </div>
+        <button class="btn-show" id="bt12">Показать информацию</button>
+        <div class="dir-info-block hide" id="dib12">
+          <span class="di-text">  Имя Ирины Викторовны неразрывно связано с образованием Сальского района, гимназией №2, в которой она проработала более 27 лет сначала учителем, заместителем директора по учебно-воспитательной работе, а затем в должности директора.
+            Именно под её руководством в 2005 г школа №2 получила статус гимназии, а в 2007 г победила в конкурсе общеобразовательных учреждений, внедряющих инновационные образовательные программы в рамках приоритетного национального проекта «Образование». Первой в районе Ирина Викторовна 
+            начала работу по углубленному изучению иностранного языка, первой стала реализовывать программу «Одаренные дети», в результате работы над которой гимназия на протяжении многих лет сохраняет первенство в городе по количеству победителей и призеров предметных олимпиад различного уровня. Первая, первая, первая… Ирина Викторовна всегда стремилась быть первой во всём. Невозможно перечислить всё, что создано ею в гимназии. Она жила ради школы, дорожила каждым учителем и ребёнком.
+            Будучи неординарной личностью, замечательным педагогом, Ирина Викторовна была сердцем, мозгом и душой педагогического коллектива.  Гимназия стала для нее настоящим родным домом, здесь она реализовала себя как прекрасный специалист, грамотный и ответственный руководитель, замечательный учитель, пример трудолюбия и жизнелюбия.</span>
+        </div>
+      </section>
+      <section class="director">
+        <div class="dir-field">
+          <span class="dir-year" id="dy-13">2011-2014</span>
+          <img class="dir-img" src="img/d13.jpg" />
+          <span class="dir-name" id="dn-13">Ковалёв Александр Алексеевич</span>
+        </div>
+        <button class="btn-show" id="bt13">Показать информацию</button>
+        <div class="dir-info-block hide" id="dib13">
+          <span class="di-text">Ковалев Александр Алексеевич, ветеран педагогического труда, Почётный работник общего образования РФ, директор школы №2 имени Карла Маркса, гимназии №2 г. Сальска, учитель физики, профессионал своего дела.
+                 40 лет своей жизни Александр Алексеевич бескорыстно отдал Сальскому образованию, 
+            благородному делу обучения и воспитания детей, продолжив педагогическую династию. 
+            В 1976 году молодым специалистом пришёл он в школу №2 имени Карла Маркса. 
+            Первые уроки, первое классное руководство, чувство ответственности и долга 
+            сформировали нравственные принципы и твёрдость характера, которые разглядело
+             и руководство Сальского района. И 1984 год ознаменовался для него важным событием
+              в педагогической деятельности – назначением на должность директора школы. 
+              Очень молодым, в 29 лет, он начал нелёгкий путь директора школы. Общий стаж 
+              руководителя образовательного учреждения Александра Алексеевича составляет почти 30 лет.
+               Без преувеличения можно сказать, что он относится к золотому фонду педагогов 
+               нашего района и области. Учитель с большой буквы, он дал отличные знания сотням 
+               благодарных учеников. Наставник с большой буквы, он передал свой опыт десяткам молодых 
+               педагогов, по крупицам собирал лучших учителей в ставшую родной школу. 
+               Невозможно перечислить всё, что создано им в гимназии: от бытовых условий 
+               до первой в районе локальной сети Интернет. Он жил ради школы, дышал ею, дорожил каждым учителем и учеником.</span>
+        </div>
+      </section>
+      <section class="director">
+        <div class="dir-field">
+          <span class="dir-year" id="dy-14">2014-2022</span>
+          <img class="dir-img" src="img/d14.jpg" />
+          <span class="dir-name" id="dn-14"
+            >Ольховская Наталья Владимировна</span
+          >
+        </div>
+        <button class="btn-show" id="bt14">Показать информацию</button>
+        <div class="dir-info-block hide" id="dib14">
+          <span class="di-text">В 2014 г. Наталья Владимировна была назначена директором МБОУ гимназии № 2 г.Сальска, которая стала для неё родным домом. В ней она проработала 8 лет. Это много или мало для жизни директора школы? Наверное, для любого человека это не просто период в жизни, а огромный путь, полный взлетов и побед, радостей и горестей.   Это постоянная и целенаправленная работа по воспитанию детей, самосовершенствованию и формированию единого образовательного пространства. Работая директором  гимназии,  Наталья Владимировна  проявляла свое мастерство и лучшие качества администратора, что позволило педагогическому коллективу вырасти в дружную и сплоченную команду, способную решать любые вопросы обучения и воспитания подрастающего поколения.
+            Прекрасные организаторские способности, знание психологии людей помогали ей увлечь педагогический коллектив общим делом. Она не боялась внедрять новое в учебно-воспитательный процесс, поэтому учебное заведение успешно осваивало новые педагогические технологии. При этом она  старалась сохранить лучшие традиции нашего коллектива. Наталья Владимировна   щедро делилась своими идеями, педагогическими задумками,   Всегда могла подсказать, порекомендовать, как правильно принять то или иное решение, прийти на помощь в любую минуту, не считаясь с личным временем.     
+             Её коммуникабельность, умение общаться, дружелюбие вызывали искреннее уважение у  тех, с кем ей пришлось работать. Она обладала каким-то неугасающим моральным импульсом, умела видеть новое во множестве разных ситуаций и всегда была готова помочь молодым. Соединяя в себе любовь к делу и к своим ученикам, она щедро одаривала духовным богатством и открытостью души всех, кто был с ней рядом.
+             Именно под  руководством Натальи Владимировны  МБОУ гимназия №2 г. Сальска стала лучшим образовательным учреждением в Сальском районе. Наталья Владимировна  всегда стремилась быть первой и лучшей во всём. Она жила ради  гимназии, дорожила каждым учителем и ребёнком. </span>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="f-content">
+        <h4>"Директора Гимназии"</h4>
+        <a class="upbtn" href="#1">Наверх ↑</a>
+        <h5>2023 г.</h5>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,4 +1,4 @@
-// кнопки инфы
+// кнопки информации
 let btns = document.querySelectorAll(".btn-show");
 let blocks = document.querySelectorAll(".dir-info-block");
 
@@ -138,7 +138,7 @@ for (let btn of selectBtn) {
 
 submitBtn.onclick = selFunc
 
-// поиск
+// поле поиска
 
 let searchInput = document.getElementById("search-field");
 let searchBtn = document.getElementById("search-btn");

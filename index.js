@@ -169,7 +169,7 @@ let searchFunc = () => {
       }
       break;
     } else if (
-      director.outerText
+      director.outerText.split("\n")[4]
         .toLowerCase()
         .indexOf(searchInput.value.toLowerCase()) !== -1
     ) {
